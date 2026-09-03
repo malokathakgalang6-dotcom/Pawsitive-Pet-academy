@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1976D2"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/btnBackFromContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt; Back"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8F5F0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get In Touch"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#12372A"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Our Details" android:textStyle="bold" android:textColor="#12372A" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="📍 123 Pet Street, Durban, 4001"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="📞 066 097 9292" android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="✉️ info@pawsitive.co.za" android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🕒 Mon - Fri: 8am - 5pm" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Send Message" android:textStyle="bold" android:textColor="#12372A" android:layout_marginBottom="12dp"/>
+
+                <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="48dp" android:hint="Your Name" android:background="#F5F5F5" android:padding="12dp" android:layout_marginBottom="10dp"/>
+                <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="48dp" android:hint="Your Email" android:inputType="textEmailAddress" android:background="#F5F5F5" android:padding="12dp" android:layout_marginBottom="10dp"/>
+                <EditText android:id="@+id/etMessage" android:layout_width="match_parent" android:layout_height="100dp" android:hint="Your Message" android:gravity="top" android:background="#F5F5F5" android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+                <Button android:id="@+id/btnSend" android:layout_width="match_parent" android:layout_height="50dp" android:text="Send Message" android:backgroundTint="#12372A"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1976D2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/btnBackFromAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt; Back"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8F5F0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Pawsitive Pet Academy"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#12372A"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Our Mission" android:textStyle="bold" android:textColor="#12372A" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="We provide training and education in pet care and animal training. Our goal is to teach responsible and positive approaches to animal care for pet owners and future professionals in Durban."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Founded in 2023" android:textStyle="bold" android:textColor="#12372A" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Located in Durban, we have trained over 500 students and we focus on practical skills for real-world animal care."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Why Choose Us?" android:textStyle="bold" android:textColor="#12372A" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Experienced trainers&#10;• Hands-on learning&#10;• Small class sizes&#10;• Positive training methods&#10;• Certificates provided"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

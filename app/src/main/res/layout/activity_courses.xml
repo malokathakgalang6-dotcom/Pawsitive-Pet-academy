@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1976D2"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/btnBackFromCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt; Back"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Courses"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8F5F0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Your Course"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#12372A"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Course 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. Puppy Training" android:textStyle="bold" android:textColor="#12372A" android:textSize="16sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Duration: 4 weeks" android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fee: R1500" android:textColor="#1976D2" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Learn basic puppy care, socialization and toilet training." android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. Basic Obedience" android:textStyle="bold" android:textColor="#12372A" android:textSize="16sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Duration: 6 weeks" android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fee: R2500" android:textColor="#1976D2" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Teach sit, stay, come and leash walking with positive methods." android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. Advanced Behaviour" android:textStyle="bold" android:textColor="#12372A" android:textSize="16sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Duration: 8 weeks" android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fee: R3500" android:textColor="#1976D2" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Solve barking, aggression and anxiety issues professionally." android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4. Pet Grooming" android:textStyle="bold" android:textColor="#12372A" android:textSize="16sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Duration: 6 weeks" android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fee: R3000" android:textColor="#1976D2" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Learn bathing, brushing, nail clipping and breed-specific grooming." android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Course 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5. Animal First Aid" android:textStyle="bold" android:textColor="#12372A" android:textSize="16sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Duration: 2 weeks" android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fee: R1200" android:textColor="#1976D2" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Emergency care, CPR and handling sick or injured animals." android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGoToFees"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Calculate Fees"
+                android:backgroundTint="#12372A"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

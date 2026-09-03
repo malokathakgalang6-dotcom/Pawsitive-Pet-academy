@@ -1,0 +1,6 @@
+<resources>
+    <style name="Base.Theme.PawsitivePetAcademy2" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="Theme.PawsitivePetAcademy2" parent="Base.Theme.PawsitivePetAcademy2" />
+</resources>
