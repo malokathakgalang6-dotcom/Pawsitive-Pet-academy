@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #eef8f2;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #173b30;
+    font-size: 32px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #236b52;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #173b30;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b9e5cc;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero {
+    background: linear-gradient(135deg,
+            #eef8f2,
+            #fff7ed);
+
+    text-align: center;
+    padding: 80px 25px;
+}
+
+.hero h2 {
+    color: #173b30;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #236b52;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #173b30;
+}
+
+section {
+    padding: 60px 25px;
+}
+
+section h2 {
+    color: #173b30;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1;
+    background-color: #f6faf7;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #dfe9e3;
+}
+
+.card h3 {
+    color: #236b52;
+}
+
+footer {
+    background-color: #173b30;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #dfe9e3;
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #173b30;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f6faf7;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav {
+    background-color: #0077cc;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}

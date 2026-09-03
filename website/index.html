@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pawsitive Pet Academy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form id="feeForm">
+        <label>Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label>Phone:</label>
+        <input type="text" id="phone"><br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <h3>Select Courses:</h3>
+        <input type="checkbox" name="course" value="1500"> Canine Obedience Training (R1500)<br>
+        <input type="checkbox" name="course" value="1500"> Pet Grooming (R1500)<br>
+        <input type="checkbox" name="course" value="1500"> Animal Behaviour (R1500)<br>
+        <input type="checkbox" name="course" value="1500"> Pet Business Management (R1500)<br>
+        <input type="checkbox" name="course" value="750"> Puppy Care (R750)<br>
+        <input type="checkbox" name="course" value="750"> Pet First Aid (R750)<br>
+        <input type="checkbox" name="course" value="750"> Basic Dog Walking (R750)<br><br>
+
+        <button type="button" onclick="calculateFees()">Calculate</button>
+    </form>
+
+    <p id="result"></p>
+
+
+    <header>
+        <header>
+            <img src="assets/logo.svg" alt="Pawsitive Pet Academy Logo" class="logo">
+
+            <h1>Pawsitive Pet Academy</h1>
+            <p>Learn • Care • Train</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="calculate.html">Calculate Fees</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <main>
+
+            <section class="hero">
+                <h2>Build Better Skills for Happier Pets</h2>
+
+                <p>
+                    Pawsitive Pet Academy provides practical pet care
+                    education and animal training for pet owners,
+                    aspiring professionals and animal lovers.
+                </p>
+
+                <a href="courses.html" class="button">
+                    Explore Our Courses
+                </a>
+            </section>
+
+            <section>
+                <h2>Welcome to Pawsitive Pet Academy</h2>
+
+                <p>
+                    Established in 2023, Pawsitive Pet Academy provides
+                    training and education in pet care and animal training
+                    in Durban.
+                </p>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>🐶 Practical Skills</h3>
+                        <p>
+                            Learn useful skills for caring for and
+                            working with animals.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎓 Professional Learning</h3>
+                        <p>
+                            Develop knowledge for pet care and
+                            animal-related careers.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>❤️ Animal Care</h3>
+                        <p>
+                            Learn responsible and positive approaches
+                            to animal care and training.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>© 2026 Pawsitive Pet Academy</p>
+            <p>Durban, KwaZulu-Natal, South Africa</p>
+        </footer>
+
+        <body>
+            <!-- your form and header/logo here -->
+
+            <script>
+                function calculateFees() {
+                    // Check if personal details are filled
+                    if (document.getElementById("name").value === "" ||
+                        document.getElementById("phone").value === "" ||
+                        document.getElementById("email").value === "") {
+                        alert("Please fill in all personal details.");
+                        return;
+                    }
+
+                    let courses = document.querySelectorAll('input[name="course"]:checked');
+                    let subtotal = 0;
+
+                    courses.forEach(course => {
+                        subtotal += parseInt(course.value);
+                    });
+
+                    // Apply discount
+                    let discount = 0;
+                    if (courses.length === 2) discount = 0.05;
+                    else if (courses.length === 3) discount = 0.10;
+                    else if (courses.length > 3) discount = 0.15;
+
+                    let discountedTotal = subtotal - (subtotal * discount);
+
+                    // Add VAT (15%)
+                    let finalTotal = discountedTotal + (discountedTotal * 0.15);
+
+                    document.getElementById("result").innerText =
+                        "Final Quoted Fee: R" + finalTotal.toFixed(2);
+
+                }
+
+
+            </script>
+        </body>
+
+
+
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Fees - Pawsitive Pet Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/logo.svg" alt="Pawsitive Pet Academy Logo" class="logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="course.html">Courses</a>
+            <a href="calculate.html">Calculate Fees</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+
+        <h1>Calculate Course Fees</h1>
+
+        <p>Select your courses to calculate the total fee.</p>
+
+        <form>
+
+            <label>
+                <input type="checkbox" value="1500">
+                Canine Obedience Training - R1500
+            </label>
+            <br><br>
+
+            <label>
+                <input type="checkbox" value="1500">
+                Pet Grooming - R1500
+            </label>
+            <br><br>
+
+            <label>
+                <input type="checkbox" value="1500">
+                Animal Behaviour - R1500
+            </label>
+            <br><br>
+
+            <label>
+                <input type="checkbox" value="1500">
+                Pet Business Management - R1500
+            </label>
+            <br><br>
+
+            <label>
+                <input type="checkbox" value="750">
+                Puppy Care - R750
+            </label>
+            <br><br>
+
+            <label>
+                <input type="checkbox" value="750">
+                Pet First Aid - R750
+            </label>
+            <br><br>
+
+            <label>
+                <input type="checkbox" value="750">
+                Basic Dog Walking - R750
+            </label>
+            <br><br>
+
+            <button type="button" onclick="calculateFees()">
+                Calculate Total
+            </button>
+
+        </form>
+
+        <h2 id="result">Total: R0.00</h2>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pawsitive Pet Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function calculateFees() {
+
+            const courses = document.querySelectorAll(
+                'input[type="checkbox"]:checked'
+            );
+
+            let total = 0;
+
+            courses.forEach(function (course) {
+                total += Number(course.value);
+            });
+
+            const numberOfCourses = courses.length;
+
+            let discount = 0;
+
+            if (numberOfCourses === 2) {
+                discount = 0.05;
+            } else if (numberOfCourses === 3) {
+                discount = 0.10;
+            } else if (numberOfCourses > 3) {
+                discount = 0.15;
+            }
+
+            const discountedTotal = total - (total * discount);
+
+            const vat = discountedTotal * 0.15;
+
+            const finalTotal = discountedTotal + vat;
+
+            document.getElementById("result").textContent =
+                "Total: R" + finalTotal.toFixed(2);
+        }
+    </script>
+
+</body>
+
+</html>
